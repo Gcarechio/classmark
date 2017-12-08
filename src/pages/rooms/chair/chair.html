@@ -1,0 +1,5 @@
+<div class="chair_box" (click)="chairClicked()">
+    <img *ngIf="NUSP_ocupante != null" class="chair_img" src="./assets/icon/chair_gray.png"/>
+    <img *ngIf="NUSP_ocupante == null" class="chair_img" src="./assets/icon/chair_green.png"/>
+    <span class="chair_num">{{("00" + selectedChair.idLugar).slice(-2)}}</span>
+</div>

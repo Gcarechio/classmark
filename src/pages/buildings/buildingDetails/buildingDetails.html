@@ -1,0 +1,30 @@
+<ion-content>
+    <form (ngOnSubmit)="save()">
+        <ion-row class="second-row">
+            <ion-item>
+                <ion-label floating><strong>CEP</strong></ion-label>
+                <ion-input [(ngModel)]="building.CEP" type="text" name="CEP"></ion-input>
+            </ion-item>
+        </ion-row>
+        <ion-row class="second-row">
+            <ion-item>
+                <ion-label floating><strong>NOME</strong></ion-label>
+                <ion-input [(ngModel)]="building.nome" type="text" name="nome"></ion-input>
+            </ion-item>
+        </ion-row>
+        <ion-row class="second-row">
+            <ion-item>
+                <ion-label floating><strong>ENDEREÇO</strong></ion-label>
+                <ion-input [(ngModel)]="building.endereco" type="text" name="endereco"></ion-input>
+            </ion-item>
+        </ion-row>
+        <div style="width: 100%;">
+            <button ion-button class="center-btn" type="submit">SALVAR</button>
+        </div>
+    </form>
+    <ion-row>
+        <div style="width: 100%;">
+            <button ion-button class="center-btn" type="button" (click)="back()">VOLTAR</button>
+        </div>
+    </ion-row>
+</ion-content>

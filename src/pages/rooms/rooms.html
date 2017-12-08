@@ -1,0 +1,21 @@
+<ion-content>
+    <p>Usuário está sentado? {{seated}}</p>
+    <div class="chair_line">
+        <chair *ngFor="let chair of chairs_line1" [chair]="chair" [occupied]="seated" (seat)="seating($event)"></chair>
+    </div>
+    <div class="chair_line">
+        <chair *ngFor="let chair of chairs_line2" [chair]="chair" [occupied]="seated" (seat)="seating($event)"></chair>
+    </div>
+    <div class="chair_line">
+        <chair *ngFor="let chair of chairs_line3" [chair]="chair" [occupied]="seated" (seat)="seating($event)"></chair>
+    </div>
+    <div class="chair_line">
+        <chair *ngFor="let chair of chairs_line4" [chair]="chair" [occupied]="seated" (seat)="seating($event)"></chair>
+    </div>
+    <div class="chair_line">
+        <chair *ngFor="let chair of chairs_line5" [chair]="chair" [occupied]="seated" (seat)="seating($event)"></chair>
+    </div>
+    <div class="chair_line">
+        <chair *ngFor="let chair of chairs_line6" [chair]="chair" [occupied]="seated" (seat)="seating($event)"></chair>
+    </div>
+</ion-content>

@@ -1,0 +1,37 @@
+<ion-content>
+    <form (ngOnSubmit)="save()">
+        <ion-row class="second-row">
+            <ion-item>
+                <ion-label floating><strong>NUSP</strong></ion-label>
+                <ion-input [(ngModel)]="user.NUSP" type="tel" name="NUSP"></ion-input>
+            </ion-item>
+        </ion-row>
+        <ion-row class="second-row">
+            <ion-item>
+                <ion-label floating><strong>NOME</strong></ion-label>
+                <ion-input [(ngModel)]="user.nome" type="text" name="nome"></ion-input>
+            </ion-item>
+        </ion-row>
+        <ion-row class="second-row">
+            <ion-item>
+                <ion-label floating><strong>EMAIL</strong></ion-label>
+                <ion-input [(ngModel)]="user.email" type="text" name="email"></ion-input>
+            </ion-item>
+        </ion-row>
+        <ion-row class="second-row">
+            <ion-item>
+                <ion-label floating><strong>SENHA</strong></ion-label>
+                <ion-input [(ngModel)]="user.senha" type="password" name="senha"></ion-input>
+            </ion-item>
+        </ion-row>
+        <ion-row class="second-row">
+            <ion-item>
+                <ion-label floating><strong>CURSO</strong></ion-label>
+                <ion-input [(ngModel)]="user.curso" type="text" name="curso"></ion-input>
+            </ion-item>
+        </ion-row>
+        <div style="width: 100%;">
+            <button ion-button class="center-btn" type="submit">SALVAR</button>
+        </div>
+    </form>
+</ion-content>

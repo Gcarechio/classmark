@@ -1,0 +1,36 @@
+<ion-content>
+    <form (ngOnSubmit)="save()">
+        <ion-row class="second-row">
+            <ion-item>
+                <ion-label floating><strong>Sigla</strong></ion-label>
+                <ion-input [(ngModel)]="subject.sigla" type="text" name="sigla"></ion-input>
+            </ion-item>
+        </ion-row>
+        <ion-row class="second-row">
+            <ion-item>
+                <ion-label floating><strong>Turma</strong></ion-label>
+                <ion-input [(ngModel)]="subject.turma" type="text" name="turma"></ion-input>
+            </ion-item>
+        </ion-row>
+        <ion-row class="second-row">
+            <ion-item>
+                <ion-label floating><strong>Créditos</strong></ion-label>
+                <ion-input [(ngModel)]="subject.creditos" type="tel" name="creditos"></ion-input>
+            </ion-item>
+        </ion-row>
+        <ion-row class="second-row">
+            <ion-item>
+                <ion-label floating><strong>N° da Sala</strong></ion-label>
+                <ion-input [(ngModel)]="subject.numeroSala" type="text" name="numeroSala"></ion-input>
+            </ion-item>
+        </ion-row>
+        <div style="width: 100%;">
+            <button ion-button class="center-btn" type="submit">SALVAR</button>
+        </div>
+    </form>
+    <ion-row>
+        <div style="width: 100%;">
+            <button ion-button class="center-btn" type="button" (click)="back()">VOLTAR</button>
+        </div>
+    </ion-row>
+</ion-content>

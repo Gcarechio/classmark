@@ -1,0 +1,7 @@
+<ion-content>
+    <ion-list inset>
+        <button ion-item *ngFor="let materia of materias" (click)="itemSelected(materia)">
+            {{ materia.sigla }}
+        </button> 
+    </ion-list>
+</ion-content>
