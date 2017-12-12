@@ -2,7 +2,7 @@
 const app = require('./server/config/express');
 const path = require('path');
 const http = require('http');
-require('./server/config/database')('localhost', 'root', 'pcs3616');
+// const con = require('./server/config/database')('localhost', 'root', 'pcs3616');
 
 // Get port from environment and store in Express
 const port = process.env.PORT || '8103';
